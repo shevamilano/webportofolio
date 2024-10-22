@@ -3,59 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheva Haya Milano - Portofolio</title>
+    <title>Sheva Haya Milano - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
+
 <body>
-    <h1>Sheva Haya Milano</h1>
-    <h4>Mahasiswa Ilmu Komputer</h4>
-    <img src="sheva.jpg" width="400" alt="img sheva">
-    <p><strong>Selamat datang di web portofolio saya!</strong></p>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#project">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="home-page">
+            <div class="home-page-img">
+                <img src="sheva.jpg" alt="Profile Picture">
+            </div>
+            <div class="content">
+                <h1>Hello, I'm Sheva</h1>
+                <h3>Beginner Data Scientist</h3>
+            </div>
+            
+        </section>
 
-    <h2>Tentang Saya</h2>
-    <p>Hai! Saya <strong>Sheva Haya Milano</strong>, seorang mahasiswa <em>Ilmu Komputer</em> yang tertarik dengan bidang <u>data</u> dan <u>matematika</u>. Saya senang belajar bagaimana mengolah data dan menggunakan konsep-konsep matematika untuk menyelesaikan berbagai masalah. Selain itu, saya tertarik dengan <u>pemrograman web</u> dan memiliki keinginan untuk membangun aplikasi yang kreatif dan bermanfaat.</p>
-    <p> <q>When you do what you like, that's freedom.
-        When you like what you've done, that's happiness. </q> - author</p>
+        <section id="about" class="about-page">
+            <div class="about-page">
+                <h2>About</h2>
+                <p>Hi! I'm <strong>Sheva Haya Milano</strong>, a computer science student who is passionate about <u>data</u> and <u>mathematics</u>. I love learning how to process data and use mathematical concepts to solve various problems. Additionally, I am interested in <u>web programming</u> and eager to build creative and useful applications.</p>
+            </div>
+        </section>
+    
+        <section id="education" class="edu-page">
+            <div class="edu-page-form">
+                <h2>Education</h2>
+                <table border="1">
+                    <tr>
+                        <th>Year</th>
+                        <th>Institution</th>
+                        <th>Major</th>
+                    </tr>
+                    <tr>
+                        <td>2022 - Present</td>
+                        <td>Universitas Pertamina</td>
+                        <td>Computer Science</td>
+                    </tr>
+                    <tr>
+                        <td>2019 - 2022</td>
+                        <td>SMA Negeri 5 Jakarta</td>
+                        <td>MIPA</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    
+        <section id="project" class="project-page">
+            <div class="project-page">
+                <h2>Project</h2>
+                <p>Coming Soon...</p>
+            </div>
+        </section>
 
-    <h2>Pendidikan</h2>
-    <table border="1">
-        <tr>
-            <th>Tahun</th>
-            <th>Institusi</th>
-            <th>Jurusan</th>
-        </tr>
-        <tr>
-            <td rowspan="2">2022 - Sekarang</td> 
-            <td>Universitas Pertamina</td>
-            <td>Ilmu Komputer</td>
-        </tr>
-        <tr>
-            <td colspan="2">Aktivitas: Anggota Himpunan Mahasiswa Ilmu Komputer</td> 
-        </tr>
-        <tr>
-            <td d rowspan="2">2019 - 2022</td>
-            <td>SMA Negeri 5 Jakarta</td>
-            <td>MIPA</td>
-        </tr>
-        <tr>
-            <td colspan="2">Aktivitas: Anggota English Club</td> 
-        </tr>
-    </table>
 
-    <h2>Keterampilan</h2>
-    <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Python, C++, Java</li>
-        <li>SQL, Oracle, phpmyadmin</li>
-    </ul>
+        <section id="media" class="media-page">
+            <header>
+                <h3 class="media-title">
+                    Enjoy this music
+                </h3>
+            </header>
+            <div class="music-page-media">
+                <audio controls>
+                    <source src="Bruno Major - The Most Beautiful Thing (Lyric & Chord Video) [ ezmp3.cc ].mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
 
-
-
-    <h2>Kontak</h2>
-    <p>Jika ingin berkolaborasi atau bertanya lebih lanjut, bisa menghubungi saya melalui:</p>
-    <ul>
-        <li>Email: shevamilano21@gmail.com</li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/sheva-haya-milano">Sheva Haya Milano</a></li>
-    </ul>
-
+                <video controls width="400" height="300" poster="thumbnail.jpg">
+                    <source src="Bruno Major - The Most Beautiful Thing (Lyric & Chord Video).mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+        </section>
+    
+        <section id="contact" class="contact-page">
+            <div class="form">
+                <h2>Contact Me</h2>
+                <form action="" method="get">
+                    <table>
+                        <h4>Hubungi Saya Bisa Melalui Form Dibawah ini!</h4>
+                        <tr>
+                            <td><label for="nama">Nama Lengkap:</label></td>
+                            <td><input type="text" name="nama" id="nama" required></td>
+                        </tr>
+        
+                        <tr>
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" name="email" id="email" required></td>
+                        </tr>
+        
+                        <tr>
+                            <td><label for="usia">Usia:</label></td>
+                            <td><input type="number" name="usia" id="usia" min="10" max="100" required></td>
+                        </tr>
+        
+                        <tr>
+                            <td><label for="password">Password:</label></td>
+                            <td><input type="password" name="password" id="password" required></td>
+                        </tr>
+        
+                        <tr>
+                            <td><label for="gender">Jenis Kelamin:</label></td>
+                            <td>
+                                <div class="bordered-radio">
+                                    <input type="radio" name="gender" id="laki-laki" value="laki-laki" required>
+                                    <label for="laki-laki">Laki-laki</label>
+                                    <input type="radio" name="gender" id="perempuan" value="perempuan" required>
+                                    <label for="perempuan">Perempuan</label>
+                                </div>
+                            </td>
+                        </tr>
+        
+                        <tr>
+                            <td><label for="pesan">Pesan:</label></td>
+                            <td><textarea name="pesan" id="pesan" placeholder="Tulis pesan disini"></textarea></td>
+                        </tr>
+                    </table>
+        
+                    <div class="button-group">
+                        <input type="submit" value="Kirim">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Sheva Haya Milano. All rights reserved.</p>
+    </footer>
 </body>
 </html>
+

@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #f7f7f2;
+    color: #1e1e24;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background: #f7f7f2;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #020202;  
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    transition: all .3s ease;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: brown;
+}
+
+section {
+    scroll-margin-top: 130px;
+}
+
+.home-page {
+    height: 100vh;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    padding: 8rem 5rem;
+}
+
+.home-page-img img {
+    display: flex;
+    width: 350px;
+    height: 350px;
+    max-width: 400px;
+    border-radius: 50%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.content h3 {
+    font-size: 1,5rem;
+    position: relative;
+    padding-left: 6rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.content h3::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 2px;
+    background-color: #1e1e24;
+    left: 0;
+    top: 1rem;
+}
+
+.about-page {
+    padding: 5rem 3rem; 
+    text-align: center;
+}
+
+.about-page > h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(77, 18, 18);
+}
+
+
+.about-page p {
+    margin-bottom: 2rem;
+}
+
+.edu-page {
+    padding: 8rem 5rem; 
+}
+
+.edu-page h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.edu-page table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.edu-page table th,
+.edu-page table td {
+    border: 1px solid #1e1e24;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.edu-page table th {
+    background-color: #1e1e24;
+    color: #f7f7f2;
+}
+
+.edu-page table td {
+    background-color: #f7f7f2;
+}
+
+.project-page {
+    padding: 4rem 8rem;
+    text-align: center;
+}
+
+.project-page > h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(77, 18, 18);
+}
+
+.project-page p {
+    font-size: 1.2rem;
+    color: #1e1e24;
+}
+
+.music-page {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(-90deg, rgb(25, 15, 68) 70%, white 30%);
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+.media-page {
+    padding: 10rem 5rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.music-page-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 500px;   
+}
+
+.media-title {
+    margin-bottom: 10px; 
+    font-size: 1.2rem; 
+    text-align: center; 
+    color: #1e1e24; 
+}
+
+.contact-page {
+    padding: 2rem 1,5rem; 
+    background-color: #f7f7f2;
+}
+
+.contact-page h2 {
+    margin-bottom: 1rem; 
+    font-size: 2rem; 
+}
+
+.form table {
+    width: 100%;
+    margin-bottom: 0.5rem; 
+}
+
+.form td {
+    padding: 0.3rem; 
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="number"],
+.form input[type="password"],
+.form select,
+.form textarea {
+    width: 100%;
+    padding: 0.3rem; 
+    border: 1px solid #1e1e24;
+    border-radius: 0.2rem; 
+    font-size: 0.85rem; 
+}
+
+.bordered-radio input[type="radio"] {
+    margin-right: 0.3rem; 
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.5rem; 
+}
+
+.button-group input[type="submit"],
+.button-group input[type="reset"] {
+    padding: 0.4rem 1rem; 
+    background-color: #1e1e24;
+    color: #f7f7f2;
+    border: none;
+    border-radius: 0.2rem;
+    font-size: 0.85rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group input[type="submit"]:hover,
+.button-group input[type="reset"]:hover {
+    background-color: #f7f7f2;
+    color: #1e1e24;
+    border: 1px solid #1e1e24;
+}
+
+
+footer {
+    padding: 1rem 0;
+    background-color: #1e1e24;
+    text-align: center;
+    color: #f7f7f2;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #f7f7f2;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f7f7f2;
+    text-decoration: underline;
+}
