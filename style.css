@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 
 * {
     box-sizing: border-box;
@@ -28,11 +28,16 @@ body {
 
 .navbar {
     display: flex;
+    gap: 15px; 
+    justify-content: center;
+    padding: 10px;
+    background-color: #000000;
+    
 }
 
 .navbar a {
     text-decoration: none;
-    color: #020202;  
+    color: #ffffff;  
     margin-left: 20px;
     font-weight: 400;
     font-size: 18px;
@@ -107,86 +112,137 @@ section {
 }
 
 .edu-page {
-    padding: 8rem 5rem; 
+    padding: 100px;
+    margin-bottom: 50px;
+    background-color:#f7f7f2;
 }
 
-.edu-page h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
 
-.edu-page table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.edu-page table th,
-.edu-page table td {
-    border: 1px solid #1e1e24;
-    padding: 0.5rem;
-    text-align: left;
-}
-
-.edu-page table th {
-    background-color: #1e1e24;
-    color: #f7f7f2;
-}
-
-.edu-page table td {
-    background-color: #f7f7f2;
-}
-
-.project-page {
-    padding: 4rem 8rem;
+.edu-page-form {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.project-page > h2 {
+
+.edu-page-form > h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: rgb(77, 18, 18);
 }
 
-.project-page p {
-    font-size: 1.2rem;
-    color: #1e1e24;
+
+.edu-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.music-page {
-    height: 100vh;
-    display: flex;
-    background: linear-gradient(-90deg, rgb(25, 15, 68) 70%, white 30%);
-    align-items: center;
-    padding: 0 10%;
-    justify-content: space-between;
+.edu-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.media-page {
-    padding: 10rem 5rem; 
+.edu-box h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.edu-box p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 16px;
+}
+
+.project-page {
+    padding: 100px;
+    background-color: #f7f7f2;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.project-page-form{
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.project-page-form > h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: rgb(77, 18, 18);
+}
+
+.project-content {
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
+.pro-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    margin: 20px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.project-box p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+.media-page {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 5rem 2rem; 
+    text-align: center;
+    background-color: #f7f7f2;
+}
+
+.media-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px; 
+    font-weight: 600;
+}
 
 .music-page-media {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 20px; 
     align-items: center;
-    gap: 10px;
-    width: 500px;   
+    width: 100%;
+    max-width: 600px;
 }
 
-.media-title {
-    margin-bottom: 10px; 
-    font-size: 1.2rem; 
-    text-align: center; 
-    color: #1e1e24; 
-}
 
 .contact-page {
-    padding: 2rem 1,5rem; 
+    padding: 30px; 
     background-color: #f7f7f2;
 }
 
@@ -194,6 +250,7 @@ section {
     margin-bottom: 1rem; 
     font-size: 2rem; 
 }
+
 
 .form table {
     width: 100%;
